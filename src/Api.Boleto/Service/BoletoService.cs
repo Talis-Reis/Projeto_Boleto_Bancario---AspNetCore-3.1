@@ -39,18 +39,18 @@ namespace Api.Boleto.Service
                     //7587
                     //0000002000
 
-                    int position1 = int.Parse(linhaDigitavel.Substring(0, 3));
-                    int position2 = int.Parse(linhaDigitavel.Substring(3, 1));
-                    int position3 = int.Parse(linhaDigitavel.Substring(4, 5));
-                    int position4 = int.Parse(linhaDigitavel.Substring(9, 1));
-                    int position5 = int.Parse(linhaDigitavel.Substring(10, 10));
-                    int position6 = int.Parse(linhaDigitavel.Substring(20, 1));
-                    int position7 = int.Parse(linhaDigitavel.Substring(21, 10));
-                    int position8 = int.Parse(linhaDigitavel.Substring(31, 1));
-                    int position9 = int.Parse(linhaDigitavel.Substring(32, 1));
-                    int position10 = int.Parse(linhaDigitavel.Substring(33, 4));
-                    int position11 = int.Parse(linhaDigitavel.Substring(37, 8));
-                    int position12 = int.Parse(linhaDigitavel.Substring(45, 2));
+                    Int64 position1 = Convert.ToInt64(linhaDigitavel.Substring(0, 3));
+                    Int64 position2 = Convert.ToInt64(linhaDigitavel.Substring(3, 1));
+                    Int64 position3 = Convert.ToInt64(linhaDigitavel.Substring(4, 5));
+                    Int64 position4 = Convert.ToInt64(linhaDigitavel.Substring(9, 1));
+                    Int64 position5 = Convert.ToInt64(linhaDigitavel.Substring(10, 10));
+                    Int64 position6 = Convert.ToInt64(linhaDigitavel.Substring(20, 1));
+                    Int64 position7 = Convert.ToInt64(linhaDigitavel.Substring(21, 10));
+                    Int64 position8 = Convert.ToInt64(linhaDigitavel.Substring(31, 1));
+                    Int64 position9 = Convert.ToInt64(linhaDigitavel.Substring(32, 1));
+                    Int64 position10 = Convert.ToInt64(linhaDigitavel.Substring(33, 4));
+                    Int64 position11 = Convert.ToInt64(linhaDigitavel.Substring(37, 8));
+                    Int64 position12 = Convert.ToInt64(linhaDigitavel.Substring(45, 2));
 
 
                     string barCodeSemDigitoVerificador = (linhaDigitavel.Substring(0, 3) + linhaDigitavel.Substring(3, 1) + linhaDigitavel.Substring(33, 4) + linhaDigitavel.Substring(37, 8) + linhaDigitavel.Substring(45, 2) + linhaDigitavel.Substring(4, 5) + linhaDigitavel.Substring(10, 10) + linhaDigitavel.Substring(21, 10));
